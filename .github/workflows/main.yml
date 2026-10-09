@@ -109,7 +109,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          mvn verify sonar:sonar \
+          mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
           -Dsonar.projectKey=iTzAsaro_actividadDevopsu2 \
           -Dsonar.organization=itzasaro \
           -Dsonar.host.url=https://sonarcloud.io \
