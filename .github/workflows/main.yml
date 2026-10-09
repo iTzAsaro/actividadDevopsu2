@@ -110,10 +110,11 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           mvn verify sonar:sonar \
-          -Dsonar.projectKey=cbugueno-duoc_bdget-jacoco \
-          -Dsonar.organization=cbugueno-duoc \
+          -Dsonar.projectKey=iTzAsaro_actividadDevopsu2 \
+          -Dsonar.organization=itzasaro \
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.login=$SONAR_TOKEN \
+          -Dsonar.token=$SONAR_TOKEN \
           -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
 
   # =========================
