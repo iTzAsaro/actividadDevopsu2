@@ -1,6 +1,6 @@
 HELP.md
 target/
-Docs/
+Docs/*.pdf
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
